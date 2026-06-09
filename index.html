@@ -46,7 +46,7 @@
             padding-bottom: 0.75rem;
         }
 
-        /* image styling */
+       
         .img-wrapper {
             margin: 1.8rem 0;
             text-align: center;
@@ -71,7 +71,7 @@
             font-style: italic;
         }
 
-        /* two column layout for list + table */
+       
         .row-split {
             display: flex;
             flex-wrap: wrap;
@@ -129,7 +129,7 @@
             background-color: #fff;
         }
 
-        /* form styles */
+       
         .form-section {
             margin-top: 2.2rem;
             padding-top: 0.5rem;
@@ -205,19 +205,17 @@
 </head>
 <body>
 <div class="container">
-    <!-- ========== TITLE (via <title> in head, plus visible heading) ========= -->
-    <!-- The actual browser tab title is set in <title> tag above (Basic HTML Page | Practical Assignment) -->
-    <!-- ========== HEADING ========= -->
+    
     <h1>📄 Build a Simple Web Page</h1>
     <div class="subhead">HTML fundamentals — structure, content & interactive elements</div>
 
-    <!-- ========== PARAGRAPH ========= -->
+    
     <p>Hello! This is a <strong>complete HTML document</strong> created to fulfill all the practical assignment requirements. 
     You can see a <strong>heading</strong>, this paragraph, an image below, a styled list, a data table, and a functional form with an input field. 
     Every element uses standard HTML tags with proper document structure and semantic layout. Modern web pages start here!</p>
 
-    <!-- ========== IMAGE ========= -->
-    <!-- valid image: using a free / placeholder image from reliable CDN (Picsum) shows a nice nature-inspired shot -->
+    
+   
     <div class="img-wrapper">
         <img class="demo-img" 
              src="https://picsum.photos/id/104/800/400" 
@@ -227,8 +225,7 @@
         <div class="img-caption">✨ Beautiful scenery — demonstrating the &lt;img&gt; tag with valid source</div>
     </div>
 
-    <!-- ========== LIST (unordered list - favorite web technologies) ========= -->
-    <!-- Requirement: unordered OR ordered list => using unordered with meaningful content -->
+
     <div class="row-split">
         <div class="list-card">
             <h2>📌 Key Web Technologies (Unordered List)</h2>
@@ -270,8 +267,7 @@
         </div>
     </div>
 
-    <!-- ========== FORM WITH AT LEAST ONE INPUT FIELD ========= -->
-    <!-- Minimal form: includes text input (name) and a submit button, also optional field but requirement satisfied -->
+  
     <div class="form-section">
         <h2>📬 Quick Feedback Form</h2>
         <p style="margin-bottom: 0.8rem;">Share your thoughts about this webpage — contains at least one input field (name / email / text).</p>
@@ -280,8 +276,7 @@
                 <label for="visitorName">✨ Your name (input field):</label>
                 <input type="text" id="visitorName" name="visitor_name" placeholder="e.g., Maria or John" required>
             </div>
-            <!-- additional optional field to enrich demonstration, but NOT mandatory. However assignment requires "A form with at least one input field" — we already have the above 'text' input. That's perfectly satisfied. 
-            Adding a second field for better usability but not necessary, but it's fine (doesn't break requirement). I'll keep minimal but add an email for better demonstration, but still the rule is satisfied even if only one input exists. But I'll include it to mimic real form, yet criteria still 100% satisfied because we have 'visitorName' input. I will also include an optional comment but still the input field count >=1. -->
+          
             <div class="form-group">
                 <label for="visitorEmail">Email (optional):</label>
                 <input type="email" id="visitorEmail" name="email" placeholder="you@example.com">
@@ -289,16 +284,15 @@
             <button type="submit">💬 Send feedback</button>
             <p style="font-size: 0.7rem; margin-top: 12px;">✅ Form includes a required text input (<strong>Your name field</strong>) — meets assignment criteria.</p>
         </form>
-        <!-- note: additional explanation: also demonstrates form submit alert without page refresh, good for demo -->
-    </div>
+       
     
-    <!-- extra note to ensure all required parts are clearly visible, also semantic and valid -->
+    
     <hr>
     <footer>
         📁 <strong>Assignment checklist</strong> — ✅ Title (browser tab), ✅ Heading (h1), ✅ Paragraph, ✅ Image (valid URL), ✅ List (unordered), ✅ Table (3 rows, 2 columns), ✅ Form with input field (name input). <br>
         Built with standard HTML5 & basic styling for clarity.
     </footer>
 </div>
-<!-- additional inline comment: structure includes DOCTYPE, html, head, body, meta, all required tags, no external libraries -->
+
 </body>
 </html>
