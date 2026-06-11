@@ -1,0 +1,423 @@
+/* Import Custom Fonts - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+
+/* Smooth Scrolling - Jab click karega smooth scroll hoga */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset and Base Styles - Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: #e8f0f5;
+    color: #2c3e4e;
+    line-height: 1.6;
+    padding: 30px 20px;
+}
+
+/* Main Container */
+.page-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* Header Styles - Different Color */
+header {
+    background: linear-gradient(135deg, #1a5f7a, #0d3b4f);
+    color: white;
+    padding: 40px 40px 20px 40px;
+}
+
+.header-inner h1 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-size: 1rem;
+    opacity: 0.9;
+    letter-spacing: 2px;
+}
+
+/* Navigation - Flexbox Layout */
+nav {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 0;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    border-bottom-color: #ffd966;
+    color: #ffd966;
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    color: #1a5f7a;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #e0ecef;
+}
+
+/* Welcome Section - Home */
+.welcome {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 20px;
+}
+
+.welcome h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    color: #1a5f7a;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    color: #4a6272;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+#gallery {
+    margin-bottom: 50px;
+    scroll-margin-top: 20px;
+}
+
+/* Media Row - Flexbox */
+.media-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.media-card {
+    flex: 1;
+    min-width: 250px;
+    background: #f9fbfd;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #e2edf2;
+    transition: all 0.3s;
+}
+
+.media-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.media-card h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    color: #1a5f7a;
+    margin-bottom: 15px;
+}
+
+.media-card video {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.media-card audio {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.caption {
+    font-size: 0.8rem;
+    color: #7a9aaa;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Info Grid - Flexbox */
+.info-grid {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.note-box, .tip-box {
+    flex: 1;
+    min-width: 220px;
+    padding: 20px 25px;
+    border-radius: 16px;
+}
+
+.note-box {
+    background: #e8f4f8;
+    border-left: 5px solid #1a5f7a;
+}
+
+.tip-box {
+    background: #fef5e8;
+    border-left: 5px solid #e6a017;
+}
+
+.note-box h3, .tip-box h3 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 12px;
+}
+
+.note-box h3 {
+    color: #1a5f7a;
+}
+
+.tip-box h3 {
+    color: #b8660e;
+}
+
+/* Image Showcase */
+.image-showcase {
+    margin: 20px 0;
+    text-align: center;
+    background: #f9fbfd;
+    padding: 20px;
+    border-radius: 24px;
+    border: 1px solid #e2edf2;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2edf2;
+}
+
+.image-caption {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #7a9aaa;
+    font-style: italic;
+}
+
+/* Projects Section */
+#projects {
+    margin-bottom: 50px;
+    scroll-margin-top: 20px;
+}
+
+/* Two Column Layout - Flexbox */
+.two-col {
+    display: flex;
+    gap: 40px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.col h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    color: #1a5f7a;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #d4e4ea;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #f0f6f9;
+    margin: 10px 0;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-weight: 500;
+    color: #1a5f7a;
+    transition: all 0.3s;
+}
+
+.skills-list li:hover {
+    background: #1a5f7a;
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Info Table */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9fbfd;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.info-table th, .info-table td {
+    border: 1px solid #d4e4ea;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.info-table th {
+    background: #e0ecef;
+    color: #1a5f7a;
+    font-weight: 600;
+}
+
+.info-table td {
+    background: white;
+}
+
+.info-table tr:hover td {
+    background: #f0f8ff;
+}
+
+/* Contact Section */
+#contact {
+    scroll-margin-top: 20px;
+}
+
+/* Form Section */
+.form-section {
+    background: #f9fbfd;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    display: block;
+    font-weight: 500;
+    color: #2c5a6e;
+    margin-bottom: 8px;
+}
+
+.form-row input, .form-row textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #d4e4ea;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+}
+
+.form-row input:focus, .form-row textarea:focus {
+    outline: none;
+    border-color: #1a5f7a;
+    box-shadow: 0 0 0 3px rgba(26, 95, 122, 0.1);
+}
+
+.form-row textarea {
+    resize: vertical;
+}
+
+/* Button Styling */
+button {
+    background: #1a5f7a;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #0d3b4f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 95, 122, 0.3);
+}
+
+/* Footer */
+footer {
+    background: #1a2f3a;
+    color: #b8cdd9;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    header {
+        padding: 25px;
+    }
+    
+    main {
+        padding: 25px;
+    }
+    
+    .header-inner h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav {
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .media-row, .info-grid, .two-col {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .image-showcase {
+        padding: 15px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .welcome h2 {
+        font-size: 1.5rem;
+    }
+}
